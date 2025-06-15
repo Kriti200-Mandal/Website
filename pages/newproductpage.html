@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <style>
+
+
+         /* Reset margin and padding */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: auto;
+            display: block;
+        }
+
+
+             /* Video Wrapper Styling */
+        .video-wrapper {
+            position: relative;
+            width: 100%;
+            text-align: center;
+            max-width: 1500px;
+            margin: 20px auto;
+        }
+
+        .video-wrapper video {
+            width: 100%;
+            border-radius: 10px;
+            max-width: 1500px;
+        }
+
+        
+            /* Table Styling */
+        table {
+            width: 100%;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+
+        td {
+            padding: 10px;
+        }
+
+           
+        .image {
+            border: solid;
+            border-radius: 12px;
+            background-color: #F9F6EE;
+            padding: 20px;
+        }
+
+
+        /* Add to Cart Button Styling*/
+        .add-to-cart {
+            background-color: darkblue;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+
+
+                /* Image Hover Effect */
+        img {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        img:hover {
+            transform: scale(1.1); /* Slight zoom effect */
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+        }
+
+
+        .add-to-cart:hover {
+            background-color: #e65c00;
+        }
+
+
+
+       /* styling div class header */
+.header a{
+    margin:90px;
+    text-decoration:none;
+    color:white;
+    transition:background-color 0.3s, color = 0.3s;
+    border-radius: 5px;
+}
+
+
+.header h1{
+    font-size:30px;
+}
+.nav-bar{
+    background-color: #405e74;
+    border-radius: 10px;
+}
+
+
+
+/* styling anchor tag of header div */
+a:hover{
+    color: gray;
+    background-color:bisque;
+
+}
+    </style>
+</head>
+
+<body>
+    
+    <div class="header">
+        <nav class="nav-bar">
+            <h1 style="text-align: center; ">Watch.Np</h1>
+          
+            <a href="../home.html">Home</a>
+            <a href="newproductpage.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href=".././pages/about.html">About Us</a>
+            <a href=".././pages/research.html">Research</a>
+            <a href=".././pages/form.html">Register</a>
+            
+        </nav>
+
+           <!-- Video Section -->
+    <div class="video-wrapper">
+        <video autoplay loop muted playsinline>
+            <source src="../video/productvideo.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        
+    </div>
+
+
+           <!-- Product Display Table -->
+    <div class="image">
+        <table>
+            <tr>
+                <td>
+                    <img src="../images/image1.png" alt="Rolex">
+                    <h3>DAY DATE-36</h3>
+                    <p><i>Oyster, 36mm, Yellow Gold</i></p>
+                    <p>$42,536</p>
+                    <button class="add-to-cart" onclick="addToCart('DAY DATE-36', 42536)">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="../images/images2.png" alt="Rolex">
+                    <h3>OYSTER PERPETUAL 36</h3>
+                    <p><i>Oyster, 36mm, Oystersteel</i></p>
+                    <p>$6,716</p>
+                    <button class="add-to-cart" onclick="addToCart('OYSTER PERPETUAL 36', 6716)">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="../images/image3.png" alt="Rolex">
+                    <h3>DAY DATE 36</h3>
+                    <p><i>Oyster, 36mm, Yellow Gold and Diamonds</i></p>
+                    <p>$70,080</p>
+                    <button class="add-to-cart" onclick="addToCart('DAY DATE 36',70080)">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div class="image">
+        <table>
+            <tr>
+                <td>
+                    <img src="../images/image44.png" alt="omega">
+                    <h3>DE VILLE PRESTIGE</h3>
+                    <p><i>42mm, leather brown strap, steel made</i></p>
+                    <p>$42,536</p>
+                    <button class="add-to-cart" onclick="addToCart('DE VILLE PRESTIGE', 42536)">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="../images/image55.png" alt="omega">
+                    <h3>CONSTELLATION GLOBEMASTER</h3>
+                    <p><i>41MM, platinum on leather strap</i></p>
+                    <p>$6,716</p>
+                    <button class="add-to-cart" onclick="addToCart('CONSTELLATION GLOBEMASTER', 6716)">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="../images/image66.png" alt="omega">
+                    <h3>DE VILLE TRESOR</h3>
+                    <p><i>36mm, steel on fabric strap</i></p>
+                    <p>$70,080</p>
+                    <button class="add-to-cart" onclick="addToCart('DE VILLE TRESOR',70080)">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+
+             <!-- Additional Video Section -->
+    <div class="video-wrapper">
+        <video autoplay loop muted playsinline>
+            <source src="../video/video3.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <div class="video-overlay"></div>
+    </div>
+
+
+
+         <!-- Add to Cart JavaScript Function -->
+    <script>
+        function addToCart(productName, price) {
+            alert(productName + " has been added to your cart! Price: $" + price);
+        }
+    </script>
+
+
+
+    <!-- Product Display Table -->
+    <div class= "image">
+        <table>
+            <tr>
+                <td>
+                    <img src="../images/image77.png" alt="graff">
+                   <h3>SPIRAL WATCH</h3>
+                    <p><i>pink mother of pearl dial, diamond,rose gold,</i></p>
+                    <p>$18,900</p>
+                    <button class="add-to-cart" onclick="addToCart('SPIRAL WATCH',18900)">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="../images/image88.png" alt="Dior">
+                    <h3>LaD de DIOR ROSE COUTURE</h3>
+                    <p><i>38mm,pink gold, pearl and diamonds</i></p>
+                    <p>$78,000</p>
+                    <button class="add-to-cart" onclick="addToCart('LaD de DIOR ROSE COUTURE',780000)">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="../images/image99.png" alt="Graff">
+                    <h3>SPIRIT WATCH</h3>
+                    <p><i>diamond dial , white gold,black satin strap, 23mm</i></p>
+                    <p>$31,500</p>
+                    <button class="add-to-cart" onclick="addToCart('SPIRIT WATCH', 31500)">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+    
+     <div class= "image">
+        <table>
+            <tr>
+                <td>
+                    <img src="../images/image100.png" alt="breguette">
+                   <h3>CLASSIC TOURBILLION</h3>
+                    <p><i>diamond made,babyblue satin strap,39mm</i></p>
+                    <p>$2,900</p>
+                    <button class="add-to-cart" onclick="addToCart('CLASSIC TOURBILLION',2900)">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="../images/image111.png" alt="breguette">
+                    <h3>REINE DE NAPLES 9915</h3>
+                    <p><i>diamond made,dark red satin strap, 48mm</i></p>
+                    <p>$8,000</p>
+                    <button class="add-to-cart" onclick="addToCart('REINE DE NAPLES 9915',8000)">Add to Cart</button>
+                </td>
+                <td>
+                    <img src="../images/image122.png" alt="breguette">
+                    <h3>REINE TREOVOR 8988</h3>
+                    <p><i>diamond made,dark brown strap,35mm</i></p>
+                    <p>$78,00</p>
+                    <button class="add-to-cart" onclick="addToCart('REINE TREOVOR 8988', 7800)">Add to Cart</button>
+                </td>
+            </tr>
+        </table>
+    </div>
+    
+
+</body>
+</html>

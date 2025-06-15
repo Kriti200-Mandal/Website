@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+           Register/Sign in
+        </title>
+        
+    </head>
+    <style>
+        .background{
+            width: fit-content;
+            height: 60px;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .register-container {
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 400px;
+        }
+            .register-container label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .register-container h2 {
+            margin-bottom: 20px;
+            color: #333;
+            text-align: center;
+        }
+        .register-container button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .register-container button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+    
+
+
+    <body background="huu.jpg">
+        
+        
+        <div class="register-container">
+                    <form onsubmit="return form_validation()" method="post" action="shani.html" name="form">                   
+                        <h2>Register Now</h2>
+                        <label>Email/Username:</label><br>
+                        <input type="email" placeholder="example@gmail.com" id="email" name="email" style="width: 300px; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" style="width: 300px; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" style="width: 300px; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+                        <br>  
+                                            
+                        <label>Gender:</label>  
+                        <div class="gender-options">  
+                            <label>  
+                                <input type="radio" name="gender" value="male" required>  
+                                Male 
+                                <input type="radio" name="gender" value="female">  
+                                Female  
+                                <input type="radio" name="gender" value="other">  
+                                Other  
+                            </label>  
+                        </div>
+                                <p style="font-weight: bold; color: #555;" id="phone">Phone no:</p>
+                                <select style="width: 300px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;">
+                                    <option>977</option>
+                                    <option>978</option>
+                                    <option>979</option>
+                                    <option>980</option>
+                                    <option>981</option>
+                                    <option>982</option>
+                                    <option>983</option>
+                                 </select>
+                                 <input type="phone" placeholder="985406****" id="ph" name="ph" style="width: 300px; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 5px;"><br>
+                                 <button type="submit">Register Now</button>
+                    </form>
+            </div>
+    </body>
+    
+    <script>
+        function form_validation()
+        {
+            let x = document.forms["form"]["email"].value;
+            if (x == "") 
+            {
+                alert("Please fill out the field");
+                return false;
+            }
+            let a = document.forms["form"]["fname"].value;
+            if (a == "") 
+            {
+                alert("Please fill out your First name");
+                return false;
+            }
+            let c = document.forms["form"]["lname"].value;
+            if (c == "") 
+            {
+                alert("Please fill out your last name");
+                return false;
+            }
+            let y = document.forms["form"]["ph"].value;
+            if (y == "") 
+            {
+                alert("Phone number must be filled out");
+                return false;
+            }
+        }
+    </script>
+</html>

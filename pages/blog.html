@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="HTML,CSS,JavaScript">
+    <meta name="author" content="Islington">
+    <meta name="description" content="Websites">
+    <title>blog</title>
+    <link rel="Stylesheet" href="Style.css">
+</head>
+<style>
+    /* stylying nav-bar */
+    .nav-bar{
+        background-color: #405e74;  /*background color of nav-bar */
+        border-radius:12px;
+    }
+
+
+
+    /* styling div class header */
+.header a{
+    margin:100px;  /* to create space around border */
+    text-decoration:none;   /* to remove horizontal below anchor tag */
+    color:black;        
+    transition:background-color 0.3s, color = 0.3s;
+    border-radius: 5px;
+}
+
+
+/* styling header */
+.header h1{
+    font-size:30px;
+}
+/* styling anchor tag of header div */
+a:hover{
+    color: gray;
+    background-color:bisque;
+}
+.bucket{
+    display:flex;  /* to make contetnt in one row */ 
+    align-items: center;  
+    margin:50px;      /* to create space around border */
+    border-radius:10px;
+    box-shadow : 5px 5px 10px #8B4513;
+}
+/*styling paragraph of text1 class */
+.text1 p{
+    font-size: 30px;  /*font-size of paragraph of class text1 is 30px with font-family cursive*/
+    font-family: cursive;  
+}
+
+
+.bowl img{
+position:flex; /* to make contetnt in one row */
+ 
+
+}
+.blog-image{
+    margin-right:120px; /* sets the right margin of an element */
+    transition:0.5s;  /* image will hover for 0.5 s */
+}
+
+
+.blog-image:hover{
+    width: 400px;
+        height:500px;
+    }
+
+
+.blog{
+    box-sizing: border-box; /* include the padding and border in an elements total width and height */
+    border-radius: 12px;
+    
+    
+}
+.blog-1 {
+    border:solid;         /* defines solid border */
+    border-radius:12px;
+    background-color:#F9F6EE;  /* background-color */
+}
+
+.blog-2{
+    border:solid;  /* defines solid border */
+    border-radius:12px;
+    background-color:#F9F6EE;
+    margin:15px;   /* to create space around border */
+}
+body{
+    background-color:#f0f0f0;
+}
+footer{
+    background-color:#f0f0f0;
+}
+
+.foot a{
+    margin:auto;
+    text-decoration:none; /* to remove horizontal line below hyperlink */
+    display:block; /* starts in new line and take whole width */
+}
+.foot{
+    display:flex;  /* to make content in row */
+    width:100%;
+  
+
+}
+.foot div{
+    text-align:center; /* to make text at cenetr */
+    
+}
+
+.column , .column-1,.column-2{
+    margin:50px;  /* to create space around an elements an outsides the border */
+}
+form input{
+    width:250px; 
+    height:30px;
+    border-radius:10px;
+    text-align:center;
+    margin-top:20px;
+    margin-right:40px;
+
+}
+form button {
+    background: transparent;
+    border:2px solid;
+    border-radius: 30px;
+    padding:20px 30px;
+    font-size:15px;
+    cursor:pointer;
+}
+
+    
+
+
+</style>
+<body>
+    <h1 style="text-align:left; font-size: 60px;">Blog</h1>
+    <!---This is header-->
+    <div class="header">
+        <nav class="nav-bar">
+            <!---inline css is used to desing single html-->
+            <h1 style="text-align: center; ">Watch.Np</h1>
+            <a href="../home.html">Home</a>
+            <a href="newproductpage.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About Us</a>
+            <a href="research.html">Research</a>
+        </nav>
+
+    </div>
+
+    <!---this is header section -->
+    <section class="head">
+        <!---inline css is used to style single html-->
+        <h1 style="font-size: 50px;">Technology and Trends in the Watch Industry</h1><br>
+         <!---inline css is used to style single html-->
+        <p style="font-size:30px">Exploring how innovation is shaping the future of watches.</p>
+        </section>
+
+
+        <!--this is bucket--->
+    <div class="bucket">
+        <table>
+      <tr>
+        <th>
+            <!---this is bowl-->
+        <div class="bowl">
+            <!--image tag is used to insert image with alt watch having width and height-->
+           <img src=".././images/butterfly1.jpg" alt="watch" width="750px" height="349px">
+        </div>
+        </th>
+        <th>
+            <!---this is bowl-->
+        <div class="bowl">
+             <!--image tag is used to insert image with alt watch-->
+            <img src=".././images/butterfly8.jpg" alt="watch">
+        </div>
+        </th>
+        <th>
+            <!---this is bowl-->
+        <div class="bowl">
+             <!--image tag is used to insert image with alt watch having width and height -->
+<img src=".././images/butterfly10.jpg" alt="watch" width="750px" height="350px">
+        </th>
+        <th>
+            <div class="bowl">
+                <img src=".././images/butterfly7.jpg" width="750px " height="350px">
+            </div>
+        </th>
+       
+        
+        
+            </div>
+            
+            </table>
+            <!---inline css is used to style single tag -->
+            <p style="font-size:30px">"A watch reminds us every second counts-make it worthwhile"</p>
+            
+    </div>
+
+
+    <br>
+   
+   <!----<div class="text1">
+        <p>Why a watch is still the ultimate accesory  in 2025</p>
+    </div>-->
+        
+
+    </div>
+    <!--the dot circle-->
+    <!--<div class="flower">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>-->
+    </div>
+    <!---this is blog--->
+    <div class="blog">
+        <div class="blog-1">
+            
+        <h2> Rise of Technology in Watch Industry</h2>
+        <p>
+            <ul>
+                As technology is continuing to advancement, the watch industry is also exploring the technology and
+                 the appealing feature of the watches have made a huge change to watch entusiasts and manufacturers.<br>
+                 A significant transformation have been observed and the smartwatches have become very popular recently.
+                  Different features like voice assistant, fitness tracker, steps calculator, and many more have been added on smartwatches.<br>
+                   Whereas, people can no even text and call from their smartwatches without their cellphone as well. 
+                   They even consist of features like weather forecast and news. The rise of watch technology has been on its peak as all these features are available right from their wrist.<br>
+                    
+                  Similarly, rise of e-commerce has been convenient for the consumers as they can buy their perfect watches online.<br>
+                    People can even see the reviews of the consumers and make their final decision to shop online.
+                     Hence, technology is changing the watch industry in many ways and all these factors have contributed to the growth of watch industry from many years.
+                     
+            </ul>
+        </p>
+        </div>
+        <br>
+
+
+       <!---div class blog-2 -->
+        <div class="blog-2">
+        <h2>The Positive Impact of Technology in Watch Industry</h2>
+        <p>
+            <ul>
+                Smartwatches have become an wearable technology which has both sustainability and style.
+                 They are used to track our heart rate, blood pressure, fitness levels and many more.
+                  The most effective part of smartwatches is that it helps the consumers to stay motivated and exercise on a regular basis.
+                   Similarly, smartwatches help to detect symptoms of different heart disease and even helped consumers on the pandemic situation of COVID-19.
+                   Due to features of smartwatch apps like weather forecast and news, etc are also available on any consumer's wrist.
+                    Without the help of our personal cellphones, smartwatches have allowed us to make phone calls and text messages.
+                    It has become a very convenient product of a consumer for their day to day life without any other devices.
+            </ul>
+        </p>
+        <br>
+      <!----change-->  </div>
+      <div class="blog-2">
+
+    <!---this is heading 2 -->
+        <h2>The Negative Impact of Technology in Watch Industry</h2>
+        <p>
+            <ul>
+                Smartwatches have many positive impacts but they come with many drawbacks as well.
+                 Smartwatches doesn't have the lifespan of decades like the traditional watches and its maintenance is also very low.
+                  They have the lifespan of only a few years due to the factors like battery degradation and rapid speed of technology advancement.
+                   Disposal of smartwatches are also not efficient as they contain non-biodegradable products.
+                    Traditional watches consist of craftmanship while smartwatches don't.
+            </ul>
+        </p>
+        </div>
+        <br>
+        <!---this is sky -->
+        <div class="sky">
+        <table>
+            <tr>
+                <th>
+        <img src=".././images/1.jpg" alt="Smartwatch" width="250px" height="400px" class="blog-image">
+        </th>
+        <th>
+        <img src=".././images/2.jpg" alt="Smartwatch" width="242px" height="431px"  class="blog-image">
+        </th>
+        <th>
+        <img src=".././images/3.jpg" alt="Smartwatch"  width="300px" height=420px class="blog-image">
+        </th>
+        </tr>
+      </table>
+      </div>
+    </div>
+<!--blog class-->
+   <br>
+    <div class="blog-2">
+        <!---heading 2 -->
+        <h2>Consumer Trends</h2>
+            <!---inline css is used to style single html-->
+        <p style="background-color:#FFFDD0">
+            <ul>
+                Today's consumers are looking for watches that has the perfect combination of both style and functionality.
+                 As people's lifestyle has become very dynamic, they look for watches that has simple designs but also elegant which helps the consumers to complement wide range of outfits.
+                  In the same way, functionality is also very important.
+                   Watches featuring health-focused technology is a go-to material for health conscious individual.
+                    The GPS tracker available on Smartwatches helps people to navigate and measure travelled distance helping the individual to stay active.
+                     Affordabilty is also a very important factor that is considered by today's buyers.
+                      While advanced features and looks are also admired, many people cannot afford them. 
+                      So, many consumers are drawn to brands that have appealing appearance and affodable.
+            </ul>
+        </p>
+        
+
+        <div class="sky">
+    
+      <table>
+        <tr>
+     <th>
+
+        <img src=".././images/4.jpg" alt="Modern Watch Design"  width=281px height=400px class="blog-image">
+     </th>
+     <th>
+        <img src=".././images/5.jpg" alt="Modern Watch Design"  width=258px height=459px class="blog-image">
+     </th>
+     <th>
+        <img src=".././images/6.jpg" alt="Modern Watch Design" width="210px " height="452px" class="blog-image">
+     </th>
+    </tr>
+      </table>
+        </div>
+    </div>
+    <br>
+
+    <div class="blog-2">
+        <h2>Technology Meets Design</h2>
+        <p>
+            <!---using unorder list-->
+            <ul>
+                <li>Modern watches incorporate AI, fitness tracking, and more while maintaining timeless designs.</li>
+                </ul>
+                </p>
+                <!---div class sky-->
+                <div class="sky">
+                    <table>
+                   <tr>
+                    <th>
+    
+                <img src=".././images/7.jpg" alt="Modern Watch Design"width=368px; height="380px" class="blog-image" >
+                </th>
+                <th>
+        <img src=".././images/8.jpg" alt="Modern Watch Design" width="368px" height="380px" class="blog-image">
+        </th>
+        <th>
+            <th>
+        <img src=".././images/9.jpg" alt="Modern Watch Design" width="368px" height=380px class="blog-image" >
+        </th>
+    </tr>
+    </table>
+        </div>
+        
+    </div>
+</main>
+
+<footer class="footer">
+    <div class="foot">
+        <!--Another div inside main div-->
+        <div class="column">
+            <h3>Useful link</h3>
+            <a href="../home.html">Home</a>
+            <a href="#">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="about.html">About us</a>
+            <a href="research.html">Research</a>
+        </div>
+        <div class="column-1">
+            <h3>NewsLetter</h3>
+            <!-- form-->
+             <form>
+                <input type="email" placeholder="Your Email Address" required>
+                <br>
+                <button type="submit" onclick="showAlert()">Subscribe</button>
+             </form>
+             </div>
+             <div class="column-2">
+                <h3>Contact</h3>
+                <p>Star Mall 4th floor, Shop no 03 <br>Bagbazar, Kathmandu</p><br>
+            
+             </div>  
+             </div>           
+            
+             <!--inserting-copy right symbol-->
+             <p style="text-align:center">&copy;2025 Watch np.All rights are reserved<br>
+             <a href="#">Privacy Policy</a></p>
+        
+    
+
+    <p>Want to explore more? Check out our <a href="/newproduct/newproductpage.html">Product Page</a>.</p>
+</footer>
+
+
+
+
+
+<!--adding java ascript to image-->
+
+    <script>
+        let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("bowl");
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+
+
+
+
+    function showAlert() {
+            alert("email required ");
+        }
+  
+
+    </script>
+</body>
+</html>
