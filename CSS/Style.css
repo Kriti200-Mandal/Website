@@ -1,0 +1,236 @@
+/* styling div class header */
+.header a{
+    margin:90px;
+    text-decoration:none;
+    color:white;
+    transition:background-color 0.3s, color = 0.3s;
+    border-radius: 5px;
+}
+.header h1{
+    font-size:30px;
+}
+.nav-bar{
+    background-color: #405e74;
+    border-radius: 10px;
+}
+/* styling anchor tag of header div */
+a:hover{
+    color: gray;
+    background-color:bisque;
+}
+/*Styling video section for proper width */
+.video-section {
+    display: flex;
+    
+    gap: 20px;
+}
+.video-section video {
+    width: 500px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* styling div container */
+.container{
+    display:flex;
+    justify-content: space-between;
+    padding:50px;
+    align-items: center;
+    margin:50px;
+    border-radius:10px;
+    box-shadow : 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.text {
+    max-width: 40%;
+    padding: 0 20px;
+}
+
+
+
+.text h3 {
+    font-size: 35px;
+    margin-bottom: 10px;
+   
+ 
+
+}
+.text p {
+    font-size: 25px;
+    line-height: 1.6;
+    color:black;
+     font-family: "Brush Script MT", cursive;
+}
+/*styling div class ball */
+.ball{
+    border-radius: 12px; /* radius of element core */
+    box-shadow : 0 4px 10px rgba(0, 0, 0, 0.1);  /* to apply more shadows to an element */
+}
+
+.ball img{
+    margin-right: 120px;  /* space at right is 90 px */
+    border-radius:8px;   /*radius of element core */
+    transition:0.5s;  /* hover effect will long for 0.5 s */ 
+        max-width: 100%;
+        height: auto;
+    
+    
+}
+.ball img:hover{
+    width:350px;   /* during hover width and height will be 350px and 360px */
+    height:360px;
+}   
+
+  
+
+.review h1{
+    font-size:60px;  /* font-size is 60px */
+    color:navy;
+    
+}
+.row{
+    display:flex;  /* to make content in one row */
+    justify-content: space-between;  /* to make space b/w content */
+   gap:5x;   
+   box-shadow : 0 4px 10px rgba(0, 0, 0, 0.1); /* to apply more shadows to an element */
+
+}
+.text-writer{
+    background:#5372bb;
+    position:absolute;
+    
+    border-radius: 10px;  /* radius of an element core is 10 px */
+    color:#d3d4d6;
+    padding:30px;  /* to generate space arounds an element core */
+
+}
+.text-writer img{
+    max-width:100px;  
+    border-radius: 50%;  /*to make circ/e */
+}
+.writer{
+    background:#2d3a59;
+    position:absolute;
+    margin-right: 50px;  /* to make space at right */
+    border-radius: 10px;  /* to apply more shadows to an element */
+    color:#d3d4d6;
+      padding:30px;   /* to generate space around element conetent */
+
+}
+.writer img{
+    max-width:100px;
+    border-radius: 50%;  /* to make circle */
+}
+
+.foot a{
+    margin:auto;
+    text-decoration:none; /* to remove horizontal line below hyperlink */
+    display:block; /* starts in new line and take whole width */
+}
+.foot{
+    display:flex;  /* to make content in row */
+    width:100%;
+  
+
+}
+.foot div{
+    text-align:center; /* to make text at cenetr */
+    
+}
+    
+
+.column , .column-1,.column-2{
+    margin:50px;  /* to create space around an elements an outsides the border */
+}
+form input{
+    width:250px; 
+    height:30px;
+    border-radius:10px;
+    text-align:center;
+    margin-top:20px;
+    margin-right:40px;
+
+}
+form button {
+    background: transparent;
+    border:2px solid;
+    border-radius: 30px;
+    padding:20px 30px;
+    font-size:15px;
+    cursor:pointer;
+
+
+}
+.text-area{
+    position:flex;
+}
+.house ,.research ,.products
+{
+   display:flex;
+    justify-content: space-between;
+    padding:50px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #405e74;
+    margin:50px;
+}
+   /* padding:50px;
+    align-items: center;
+    margin:50px;
+    border-radius:10px;
+    box-shadow : 0 4px 10px rgba(0, 0, 0, 0.1);
+}*/
+.house  ,.research a {
+    text-decoration: none;
+}
+.products p{
+    font-size: 25px; 
+    line-height: 1.6;
+    color:black;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+.house p {
+    font-size: 25px; 
+    line-height: 1.6;
+    color:black;
+     font-family: 'Times New Roman', Times, serif;
+}
+.research p{
+    
+    line-height: 1.6;
+    color:black;
+     font-family: 'Times New Roman', Times, serif;
+}
+
+
+.review{
+
+
+    display:flex;
+    justify-content: space-between;
+    padding:50px;
+    
+    overflow:hidden;
+    border-radius:12px;
+    box-shadow: 5px 5px 10px;
+
+}
+.text1{
+   /* display:none;*/
+    padding:50px;
+    max-width: 40%;
+    padding: 0 20px;
+    align-items: center;
+    margin:50px;
+    border-radius:10px;
+    box-shadow : 0 4px 10px rgba(0 0 0.1);
+
+  background-color: #2d3a59;
+}
+.text1 img{
+    border-radius:90px;
+}  
+
+
+    
+    
+    
